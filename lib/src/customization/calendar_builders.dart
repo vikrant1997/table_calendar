@@ -16,7 +16,7 @@ typedef FullListBuilder = List<Widget> Function(
 
 /// Builder signature for weekday names row. Contains `weekday` string, which is formatted by `dowTextBuilder`
 /// or by default function (DateFormat.E(widget.locale).format(date)), if `dowTextBuilder` is null.
-typedef DowBuilder = Widget Function(BuildContext context, String weekday);
+typedef DowBuilder = Widget Function(BuildContext context, DateTime weekday);
 
 /// Builder signature for a single event marker. Contains `date` and a single `event` associated with that `date`.
 typedef SingleMarkerBuilder = Widget Function(
